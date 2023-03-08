@@ -1,5 +1,6 @@
 :root {
     --bkg-text-color: rgba(245, 245, 245, 0.734);
+    --form-content-left-padding: 48px;
 }
 
 * {
@@ -17,9 +18,22 @@ body {
     grid-template-columns: 350px minmax(300px, 1fr);
 }
 
-/* .grid-content > * {
-    border: 1px solid #000;
-} */
+@media screen and (max-width: 600px) {
+    .grid-content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {
+        height: 250px !important;
+        justify-content: start !important;
+    }
+
+    .logo {
+        margin-top: 0px !important;
+    }
+}
 
 .banner {
     background-image: url(phil-lev-unsplash.jpg);
@@ -39,7 +53,7 @@ body {
     width: 100%;
     padding: 10px 0px;
     gap: 1rem;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .img-credit {
@@ -67,13 +81,15 @@ a {
 
 .form-content {
     background-color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 1rem var(--form-content-left-padding);
     box-shadow: 0px 25px 26px -23px rgba(0,0,0,0.2);
 }
 
 .intro {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    padding-left: var(--form-content-left-padding);
+    padding-right: 64px;
 }
 
 #form-intro {
@@ -85,16 +101,24 @@ a {
 }
 fieldset {
     display: flex;
-    gap: 4rem;
+    flex-wrap: wrap;
     border: 0px;
     padding: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
+fieldset > div {
+    margin-right: 4rem;
+}
 input {
     width: 200px;
     border: 1px solid #E5E7EB;
     border-radius: 4px;
+}
+
+input:focus {
+    border: rgb(47, 47, 247);
+    box-shadow: 0px 0px 34px -5px rgba(117,116,117,0.67);
 }
 
 label {
@@ -102,4 +126,20 @@ label {
     color: #2e2f30;
     font-weight: 600;
     
+}
+
+.submit-form {
+    padding-left: var(--form-content-left-padding);
+}
+
+#submit {
+    background-color: #596D48;
+    border: 0px;
+    border-radius: 4px;
+    padding: 0.8rem 2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0px 0px 32px -6px rgba(117,116,117,0.67);
+    margin-bottom: 1rem;
 }
