@@ -7,8 +7,8 @@
     <title>Sign-up</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@100&family=Sono:wght@300&family=Urbanist&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@100&family=Sono:wght@300&family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body class="grid-content">
     <div class="banner">
@@ -18,6 +18,53 @@
         </div>
         <div class="img-credit">Photo by <a href="https://unsplash.com/@phil_lev">Phil Lev</a> on <a href="https://unsplash.com/">Unsplash</a></div>
     </div>
-    <div class="sign-up-content">Sign-up</div>
+    <div class="sign-up-content">
+        <div class="intro">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+        <div class="form-container">
+            <div class="form-content">
+                <p id="form-intro">Let's do this!</p>
+                <form action="/" method="GET">
+                    <fieldset>
+                        <div>
+                            <label for="fname">FIRST NAME</label><br>
+                            <input type="text" name="fname" id="fname">
+                        </div>
+                        <div>
+                            <label for="lname">LAST NAME</label><br>
+                            <input type="text" name="lname" id="lname">
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                       <div>
+                           <label for="email">EMAIL</label><br>
+                           <input type="email" name="email" id="email">
+                       </div>
+                       <div>
+                           <label for="phone">PHONE NUMBER</label><br>
+                           <input type="number" id="phone" name="phone">
+                       </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                            <label for="password">PASSWORD</label><br>
+                            <input class="error" type="password" id="password" name="password">
+                        </div>
+                        <div>
+                            <label for="confirm_password">CONFIRM PASSWORD</label><br>
+                            <input class="error" type="password" name="confirm_password" id="confirm_password">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="submit-form">
+                <button type="submit" id="submit">Create Account</button>
+                <p>Already have an account? <a href="/">Log in</a></p>
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>

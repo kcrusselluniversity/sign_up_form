@@ -14,7 +14,7 @@ body {
 .grid-content {
     height: 100%;
     display: grid;
-    grid-template-columns: 300px minmax(300px, 1fr);
+    grid-template-columns: 350px minmax(300px, 1fr);
 }
 
 /* .grid-content > * {
@@ -53,3 +53,53 @@ a {
     color: black;
 }
 
+.sign-up-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgb(242, 242, 242);
+
+}
+.form-container > * {
+    margin-bottom: 2rem;
+}
+
+.form-content {
+    background-color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0px 25px 26px -23px rgba(0,0,0,0.2);
+}
+
+.intro {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#form-intro {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(43, 43, 61);
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+fieldset {
+    display: flex;
+    gap: 4rem;
+    border: 0px;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 200px;
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 0.75rem;
+    color: #2e2f30;
+    font-weight: 600;
+    
+}
