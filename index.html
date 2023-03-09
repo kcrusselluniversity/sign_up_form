@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Roboto:wght@100&family=Sono:wght@300&family=Urbanist:wght@400;600&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 <body class="grid-content">
     <div class="banner">
@@ -30,31 +31,32 @@
                     <fieldset>
                         <div>
                             <label for="fname">FIRST NAME</label><br>
-                            <input type="text" name="fname" id="fname">
+                            <input type="text" name="fname" id="fname" required>
                         </div>
                         <div>
                             <label for="lname">LAST NAME</label><br>
-                            <input type="text" name="lname" id="lname">
+                            <input type="text" name="lname" id="lname" required>
                         </div>
                     </fieldset>
                     <fieldset>
                        <div>
                            <label for="email">EMAIL</label><br>
-                           <input type="email" name="email" id="email">
+                           <input type="email" name="email" id="email" required>
                        </div>
                        <div>
                            <label for="phone">PHONE NUMBER</label><br>
-                           <input type="number" id="phone" name="phone">
+                           <input type="number" id="phone" name="phone" required>
                        </div>
                     </fieldset>
                     <fieldset>
                         <div>
                             <label for="password">PASSWORD</label><br>
-                            <input class="error" type="password" id="password" name="password">
+                            <input class="error" type="password" id="password" name="password" required>
                         </div>
-                        <div>
+                        <div id="confirm_pw_container">
                             <label for="confirm_password">CONFIRM PASSWORD</label><br>
-                            <input class="error" type="password" name="confirm_password" id="confirm_password">
+                            <input class="error" type="password" name="confirm_password" id="confirm_password" required>
+                            <div id="password_match_container">Passwords do not match</div>
                         </div>
                     </fieldset>
                 </form>

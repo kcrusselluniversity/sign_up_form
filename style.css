@@ -143,3 +143,10 @@ label {
     box-shadow: 0px 0px 32px -6px rgba(117,116,117,0.67);
     margin-bottom: 1rem;
 }
+
+#password_match_container {
+    visibility: hidden;
+    color: red; 
+    font-size: 0.7rem; 
+    margin-top: 4px
+}
